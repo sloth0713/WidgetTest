@@ -17,21 +17,31 @@ struct WidgetLauncher {
 //            Widget02082WidgetBundle.main()
 //        }
         //随机有没有widget，然后vid
-        Widget02082WidgetBundle.main()
+        
+//        BookIntentWidgetBundle.main()
+//        Widget02082WidgetBundle.main()
+        AllWidgetBundle.main()
+
     }
+    
     static var firstWidgetKind: String {
     //利用App group读取第一位组件的顺序
         return "Widget02082WidgetBundle"
     }
 }
 
-struct Widget02082WidgetBundle1: WidgetBundle {
+struct AllWidgetBundle: WidgetBundle {
     var body: some Widget {
+        BookIntentWidget()
+//        Widget02082Widget()
+    
+    }
+}
 
-        Widget02082Widget()
-        //启动之后会调用这里
-//        WidgetBundleBuilder.buildBlock()
-        
+struct BookIntentWidgetBundle: WidgetBundle {
+    var body: some Widget {
+        BookIntentWidget()
+    
     }
 }
 
@@ -39,8 +49,6 @@ struct Widget02082WidgetBundle: WidgetBundle {
     var body: some Widget {
 
         Widget02082Widget()
-        //启动之后会调用这里
-//        WidgetBundleBuilder.buildBlock()
         
     }
 }

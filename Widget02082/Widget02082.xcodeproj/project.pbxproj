@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B1A596D2D6746B7007D9191 /* intent.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 2B1A596C2D6746B7007D9191 /* intent.intentdefinition */; };
+		2B1A596E2D6746B7007D9191 /* intent.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 2B1A596C2D6746B7007D9191 /* intent.intentdefinition */; };
 		2BE4470D2D64A89600376C30 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BE4470C2D64A89600376C30 /* WidgetKit.framework */; };
 		2BE4470F2D64A89600376C30 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BE4470E2D64A89600376C30 /* SwiftUI.framework */; };
 		2BE4471A2D64A89800376C30 /* Widget02082WidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 2BE4470A2D64A89600376C30 /* Widget02082WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -37,6 +39,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2B1A596C2D6746B7007D9191 /* intent.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = intent.intentdefinition; sourceTree = "<group>"; };
 		2BE446F52D64A87D00376C30 /* Widget02082.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Widget02082.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BE4470A2D64A89600376C30 /* Widget02082WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Widget02082WidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BE4470C2D64A89600376C30 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
@@ -99,9 +102,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B1A596B2D674682007D9191 /* Share */ = {
+			isa = PBXGroup;
+			children = (
+				2B1A596C2D6746B7007D9191 /* intent.intentdefinition */,
+			);
+			path = Share;
+			sourceTree = "<group>";
+		};
 		2BE446EC2D64A87D00376C30 = {
 			isa = PBXGroup;
 			children = (
+				2B1A596B2D674682007D9191 /* Share */,
 				2BE446F72D64A87D00376C30 /* Widget02082 */,
 				2BE447102D64A89600376C30 /* Widget02082Widget */,
 				2BE4470B2D64A89600376C30 /* Frameworks */,
@@ -236,6 +248,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B1A596D2D6746B7007D9191 /* intent.intentdefinition in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +256,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B1A596E2D6746B7007D9191 /* intent.intentdefinition in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

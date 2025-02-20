@@ -4,6 +4,7 @@
 <dict>
 	<key>NSUserActivityTypes</key>
 	<array>
+		<string>ReadIntent</string>
 		<string>aaa</string>
 	</array>
 </dict>

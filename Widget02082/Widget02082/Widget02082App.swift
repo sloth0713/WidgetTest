@@ -20,11 +20,27 @@ struct Widget02082App: App {
         WindowGroup {
             ContentView().onAppear {
 //                donateRelevantSuggestion()
+                donateIntentSuggestion()
             }
         }
     }
     
-    
+    private func donateIntentSuggestion() {
+        
+        let intent:ReadIntent = ReadIntent()
+        intent.book = "xiyouji"
+        intent.author = "wce"
+        intent.suggestedInvocationPhrase = "(・∀・)"
+        let interaction:INInteraction = INInteraction(intent: intent, response: nil)
+        interaction.donate { error in
+            if let error = error {
+                print (error)
+            }else {
+                print("success")
+            }
+        }
+        
+    }
     
     private func donateRelevantSuggestion() {
         var relevantShortcuts: [INRelevantShortcut] = []
