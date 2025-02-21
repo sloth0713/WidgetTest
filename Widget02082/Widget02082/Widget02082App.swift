@@ -27,9 +27,14 @@ struct Widget02082App: App {
     
     private func donateIntentSuggestion() {
         
+        let image:INImage = INImage.systemImageNamed("fan")
+
+        
         let intent:ReadIntent = ReadIntent()
         intent.book = "xiyouji"
         intent.author = "wce"
+//        intent.setImage
+        
         intent.suggestedInvocationPhrase = "(・∀・)"
         let interaction:INInteraction = INInteraction(intent: intent, response: nil)
         interaction.donate { error in
