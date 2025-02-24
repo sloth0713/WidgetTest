@@ -10,6 +10,7 @@ import SwiftUI
 import CoreSpotlight
 import AppIntents
 import Intents
+import WidgetKit
 
 @main
 struct Widget02082App: App {
@@ -21,8 +22,21 @@ struct Widget02082App: App {
             ContentView().onAppear {
 //                donateRelevantSuggestion()
                 donateIntentSuggestion()
+                getAllInstalledWidget()
             }
         }
+    }
+    
+    func getAllInstalledWidget() {
+        WidgetCenter.shared.getCurrentConfigurations { result in
+            switch result {
+                case let .success(info):
+                    let myWidgetCount = info.count
+                    print(myWidgetCount)
+                case let .failure(error): print(error)
+            }
+        }
+        
     }
     
     private func donateIntentSuggestion() {

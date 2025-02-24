@@ -16,12 +16,12 @@ struct WidgetLauncher {
         /* 即使传入多个WidgetBundle，也会以最后一个的widgets为准*/
 
         
-        if firstWidgetKind == 1 {
-            BookIntentWidgetBundle.main()
-        }else {
-            Widget02082WidgetBundle.main()
-        }
-//        AllWidgetBundle.main()
+//        if firstWidgetKind == 1 {
+//            BookIntentWidgetBundle.main()
+//        }else {
+//            Widget02082WidgetBundle.main()
+//        }
+        AllWidgetBundle.main()
 
     }
     
