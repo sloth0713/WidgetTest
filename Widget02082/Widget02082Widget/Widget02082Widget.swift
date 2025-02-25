@@ -27,7 +27,8 @@ struct Provider: TimelineProvider {
         //退后台有一定概率会调用到这里，回前台有且只有一次机会，通过主动调用WidgetCenter.shared.reloadAllTimelines()调用到这里
         for hourOffset in 0 ..< 200 {
             let entryDate = Calendar.current.date(byAdding: .second, value: hourOffset, to: currentDate)!
-            let entry = SimpleEntry(date: entryDate, emoji: "😀", relevance: TimelineEntryRelevance(score: 100, duration: 20))
+            let entry = SimpleEntry(date: entryDate, emoji: "😀", relevance: TimelineEntryRelevance(score: Float(hourOffset), duration: 20))
+            print("entries.append(entry) \(hourOffset)")
             entries.append(entry)
         }
 

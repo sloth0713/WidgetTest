@@ -47,6 +47,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		2B1E5B132D6DB46900019E86 /* Exceptions for "Widget02082Widget" folder in "Widget02082" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				CatIntentWidget.swift,
+			);
+			target = 2BE446F42D64A87D00376C30 /* Widget02082 */;
+		};
 		2BE4471B2D64A89800376C30 /* Exceptions for "Widget02082Widget" folder in "Widget02082WidgetExtension" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
@@ -75,6 +82,7 @@
 		2BE447102D64A89600376C30 /* Widget02082Widget */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
+				2B1E5B132D6DB46900019E86 /* Exceptions for "Widget02082Widget" folder in "Widget02082" target */,
 				2BE4471B2D64A89800376C30 /* Exceptions for "Widget02082Widget" folder in "Widget02082WidgetExtension" target */,
 			);
 			path = Widget02082Widget;

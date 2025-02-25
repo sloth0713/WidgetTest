@@ -8,6 +8,7 @@
 import WidgetKit
 import SwiftUI
 
+@available(iOS 17.2, *)
 @main
 struct WidgetLauncher {
     static func main() {
@@ -41,8 +42,10 @@ struct WidgetLauncher {
     }
 }
 
+@available(iOS 17.2, *)
 struct AllWidgetBundle: WidgetBundle {
     var body: some Widget {
+        CatIntentWidget()
         BookIntentWidget()
         Widget02082Widget()
     

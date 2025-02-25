@@ -16,6 +16,7 @@ struct ContentView: View {
                 .foregroundStyle(.tint)
             Text("Hello, world!").onTapGesture {
                 WidgetCenter.shared.reloadAllTimelines()
+                print("WidgetCenter.shared.reloadAllTimelines()")
             }
         }
         .padding()

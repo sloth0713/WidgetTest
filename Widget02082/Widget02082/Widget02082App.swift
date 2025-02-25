@@ -21,8 +21,11 @@ struct Widget02082App: App {
         WindowGroup {
             ContentView().onAppear {
 //                donateRelevantSuggestion()
-                donateIntentSuggestion()
-                getAllInstalledWidget()
+//                donateIntentSuggestion()
+                //todo appintent donate，但是这个的测试功能有问题
+                donateAppIntent()
+                
+//                getAllInstalledWidget()
             }
         }
     }
@@ -36,6 +39,11 @@ struct Widget02082App: App {
                 case let .failure(error): print(error)
             }
         }
+        
+    }
+    
+    private func donateAppIntent() {
+        CatIntent().donate()
         
     }
     
